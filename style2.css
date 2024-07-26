@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    margin: 0.5rem 0;
+}
+
+p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Text Container */
+.text_conatiner {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hi {
+    color: #007bff;
+}
+
+.tgt h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.tgt h2 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Next Section */
+.next {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.next h2 {
+    font-size: 1.75rem;
+}
+
+.next h2 span {
+    color: #ffdd57;
+}
+
+/* Work Section */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.grid {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+}
+
+.image_container img {
+    max-width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.text_container {
+    padding: 1rem;
+}
+
+.text_container h3 {
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+/* Bottom Section */
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.contact_box, .about_box {
+    flex: 1 1 300px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact_box .contact_me, .about_box .about_me {
+    text-align: center;
+}
+
+.contact_box h2, .about_box h2 {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .work {
+        gap: 1rem;
+    }
+
+    .contact_box, .about_box {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text_conatiner, .next {
+        padding: 1rem;
+    }
+
+    .text_conatiner h1 {
+        font-size: 1.5rem;
+    }
+
+    .text_conatiner h2 {
+        font-size: 1.25rem;
+    }
+
+    .next h2 {
+        font-size: 1.5rem;
+    }
+}
